@@ -18,7 +18,7 @@ function SingleMeal() {
     
     return (
         <div class='single-container'>
-           {meal && 
+           {meal!==undefined && meal.meals &&
             <>
             <h1>{meal.meals[0].strMeal}</h1>
             

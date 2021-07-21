@@ -46,7 +46,7 @@ function MealsContainer() {
         
         {meals && meals.map(meal=>
             <div key={meal.idMeal} onClick = {()=>onMealClick(meal.idMeal)}>
-                <Link to={`/meals/${meal.idMeal}`}>
+                <Link to={`/${meal.idMeal}`}>
                     <Meal meal={meal} />
                 </Link>
             </div>
