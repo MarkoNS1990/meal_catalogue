@@ -1,4 +1,4 @@
-import { FETCH_MEALS_BEGIN } from "./mealTypes"
+import { FETCH_MEALS_BEGIN, FETCH_MEALS_FAILURE, FETCH_MEALS_SUCCESS } from "./mealTypes"
 import axios from 'axios'
 
 export const fetchMealsBegin = ()=>{
@@ -26,8 +26,11 @@ export const fetchMealsFailure = (error)=>{
 export const fetchMeals = ()=>{
     return (dispatch)=>{
         dispatch(fetchMealsBegin)
-        axios.get('www.themealdb.com/api/json/v1')
-        .then(res=>dispatch(fetchMealsSuccess(res.data)))
-        .catch(error=>dispatch(fetchMealsError(error.message)))
+        axios.get('https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood')
+        .then(res=>{
+            console.log(res.data.meals)
+            dispatch(fetchMealsSuccess(res.data.meals))
+        })
+        .catch(error=>dispatch(fetchMealsFailure(error.message)))
     }
 }
