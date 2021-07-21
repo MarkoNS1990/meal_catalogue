@@ -7,28 +7,36 @@ import MealsContainer from './containers/MealsContainer';
 import Random from './components/Random';
 import About from './components/About';
 import store from './redux/store';
+import SingleMeal from './components/SingleMeal';
 
 
 function App() {
+
+  
   return (
     <Provider store={store}>
     <div className="App">
-    <Navbar />
     
-    <BrowserRouter> 
+    
+    <BrowserRouter>
+    <Navbar /> 
       <Switch>
         <Route exact path='/'>
           <MealsContainer/>
         </Route>
-      <Route exact path='/random'>
-      <Random/>
-      </Route>
-      <Route exact path='/about'>
-      <About/>
-      </Route>
+          <Route exact path='/random'>
+          <Random/>
+        </Route>
+        <Route exact path='/about'>
+          <About/>
+        </Route>
+        <Route exact path='/meals/:id'>
+          <SingleMeal />
+        </Route>
       </Switch>
+      <Footer />
     </BrowserRouter>
-    <Footer />
+    
     </div>
     </Provider>
   );

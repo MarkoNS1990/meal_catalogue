@@ -24,7 +24,7 @@ const mealReducer = (state = initialState,action)=>{
                 ...state,
                 loading:false,
                 error: action.payload
-            } 
+            }    
         default:
             return state         
     }

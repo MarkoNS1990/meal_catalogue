@@ -1,16 +1,16 @@
 import React from 'react'
-import {BrowserRouter,Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import '../styles/Navbar.css'
 import { Input } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
 function Navbar() {
-    return (
-            <BrowserRouter>  
+    return ( 
+        
             <nav className='navbar'>
                 <ul className='nav-list'>
                     <div className="meal-logo">
-                        <li><Link to='/'>Meal catalogue</Link></li>
+                         <Link to='/'>Meal catalogue</Link>
                     </div>
                     <div className="list-item">
                         <Link to='/'>Home</Link>
@@ -23,7 +23,8 @@ function Navbar() {
                     </div>
                 </ul>
             </nav>
-            </BrowserRouter> 
+            
+           
         
     )
 }
