@@ -1,14 +1,17 @@
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
+import {Provider} from 'react-redux'
 import './styles/App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import MealsContainer from './containers/MealsContainer';
 import Random from './components/Random';
 import About from './components/About';
+import store from './redux/store';
 
 
 function App() {
   return (
+    <Provider store={store}>
     <div className="App">
     <Navbar />
     
@@ -27,6 +30,7 @@ function App() {
     </BrowserRouter>
     <Footer />
     </div>
+    </Provider>
   );
 }
 
