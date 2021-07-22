@@ -35,10 +35,10 @@ export const getRandomMeal = (meal)=>{
     }
 }
 
-export const searchMeal = (input) =>{
+export const searchMeal = (searchResults) =>{
     return {
         type:SEARCH_MEAL,
-        payload:input    
+        payload:searchResults    
     }
 }
 

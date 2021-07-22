@@ -7,7 +7,6 @@ import {Link} from 'react-router-dom';
 
 function SearchMealsContainer() {
     const dispatch = useDispatch()
-    const[meals,setMeals] = useState()
     const fetchedMeals = useSelector(state=>state.searchMeal.searchMeal)
     console.log(fetchedMeals.meals[0])
     
