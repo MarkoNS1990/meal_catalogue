@@ -41,7 +41,7 @@ function Navbar() {
                     </div>
                     <div className="search-item" >
                     <div className="search-icon" onClick = {handleClickSearch}><SearchIcon/></div>
-                    <Input placeholder='search meals' color='primary' onChange={onInputChange}/>
+                    <Input placeholder='search meals' color='primary' onChange={onInputChange} value={search}/>
                     </div>
                 </ul>
             </nav>
