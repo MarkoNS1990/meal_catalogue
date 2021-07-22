@@ -4,10 +4,10 @@ import './styles/App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import MealsContainer from './containers/MealsContainer';
-import Random from './components/Random';
 import About from './components/About';
 import store from './redux/store';
 import SingleMeal from './components/SingleMeal';
+import RandomMeal from './components/RandomMeal';
 
 
 function App() {
@@ -24,14 +24,15 @@ function App() {
         <Route exact path='/'>
           <MealsContainer/>
         </Route>
-          <Route exact path='/random'>
-          <Random/>
-        </Route>
+          
         <Route exact path='/about'>
           <About/>
         </Route>
-        <Route exact path='/:id'>
+        <Route exact path='/meals/:id'>
           <SingleMeal />
+        </Route>
+        <Route exact path='/random'>
+          <RandomMeal />
         </Route>
       </Switch>
       <Footer />

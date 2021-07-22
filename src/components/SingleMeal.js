@@ -17,7 +17,7 @@ function SingleMeal() {
 
     
     return (
-        <div class='single-container'>
+        <div className='single-container'>
            {meal!==undefined && meal.meals &&
             <>
             <h1>{meal.meals[0].strMeal}</h1>
@@ -25,11 +25,11 @@ function SingleMeal() {
             <img src={meal.meals[0].strMealThumb} alt={meal.meals[0].strMeal} className='single-img' />
             
             
-            <p class='instructions'>{meal.meals[0].strInstructions}</p>
+            <p className='instructions'>{meal.meals[0].strInstructions}</p>
             </>
         }
         </div>
     )
 }
 
-export default SingleMeal
+export default SingleMeal;
