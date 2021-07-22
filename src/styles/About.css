@@ -1,0 +1,28 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+.about-pic {
+  height: 300px;
+}
+
+.about-text {
+  max-width: 60%;
+  margin: 10px;
+  text-align: center;
+}
+
+.about-heading {
+  text-align: center;
+  font-size: 2.2rem;
+  font-style: italic;
+}
