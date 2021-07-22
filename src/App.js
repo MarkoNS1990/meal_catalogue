@@ -8,6 +8,7 @@ import About from './components/About';
 import store from './redux/store';
 import SingleMeal from './components/SingleMeal';
 import RandomMeal from './components/RandomMeal';
+import SearchMealsContainer from './containers/SearchMealsContainer';
 
 
 function App() {
@@ -34,12 +35,17 @@ function App() {
         <Route exact path='/random'>
           <RandomMeal />
         </Route>
+        <Route exact path='/search'>
+          <SearchMealsContainer />
+        </Route>
       </Switch>
-      <Footer />
+      
     </BrowserRouter>
     
     </div>
+    <Footer />
     </Provider>
+    
   );
 }
 

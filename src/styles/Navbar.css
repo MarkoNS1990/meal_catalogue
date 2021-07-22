@@ -11,6 +11,7 @@ a {
   color: #fff;
   text-decoration: none;
   margin-right: 30px;
+  font-family: "Courier New", Courier, monospace;
 }
 a:hover {
   color: rgb(46, 43, 43);
@@ -29,4 +30,18 @@ a:hover {
 .search-item {
   display: flex;
   align-items: center;
+}
+
+.meal-logo {
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .list-item {
+    margin: 10px 0;
+  }
 }

@@ -1,4 +1,4 @@
-import { FETCH_MEALS_BEGIN, FETCH_MEALS_FAILURE, FETCH_MEALS_SUCCESS, GET_RANDOM_MEAL, GET_SINGLE_MEAL } from "./mealTypes"
+import { FETCH_MEALS_BEGIN, FETCH_MEALS_FAILURE, FETCH_MEALS_SUCCESS, GET_RANDOM_MEAL, GET_SINGLE_MEAL, SEARCH_MEAL } from "./mealTypes"
 import axios from 'axios'
 
 export const fetchMealsBegin = ()=>{
@@ -35,6 +35,13 @@ export const getRandomMeal = (meal)=>{
     }
 }
 
+export const searchMeal = (input) =>{
+    return {
+        type:SEARCH_MEAL,
+        payload:input    
+    }
+}
+
 
 
 export const fetchMeals = (category)=>{
@@ -68,6 +75,15 @@ export const fetchRandomMeal = ()=>{
         .then(res=>{
            dispatch(getRandomMeal(res.data))
         })
+        .catch(error=>dispatch(fetchMealsFailure(error.message)))
+    }
+}
+
+export const fetchSearchMeal = (input) =>{
+    return(dispatch)=>{
+        dispatch(fetchMealsBegin)
+        axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${input}`)
+        .then(res=>dispatch(searchMeal(res.data)))
         .catch(error=>dispatch(fetchMealsFailure(error.message)))
     }
 }

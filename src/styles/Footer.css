@@ -3,4 +3,6 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+  clear: both;
+  margin-top: auto;
 }

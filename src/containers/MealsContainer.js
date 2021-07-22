@@ -1,6 +1,6 @@
 import React ,{useEffect, useState} from 'react'
 import {useSelector,useDispatch} from 'react-redux'
-import { fetchMeal, fetchMeals } from '../redux/meal/mealActions'
+import { fetchMeal, fetchMeals, searchMeal } from '../redux/meal/mealActions'
 import Loader from "react-loader-spinner";
 import Meal from '../components/Meal';
 import '../styles/MealsContainer.css'
@@ -30,6 +30,11 @@ function MealsContainer() {
         width={100}
       />
     }
+    
+            
+            
+        
+    
 
     return (
         <>
@@ -44,13 +49,14 @@ function MealsContainer() {
         </div>
         <div className='card-list'>
         
+        
         {meals && meals.map(meal=>
             <div key={meal.idMeal} onClick = {()=>onMealClick(meal.idMeal)}>
                 <Link to={`meals/${meal.idMeal}`}>
                     <Meal meal={meal} />
                 </Link>
             </div>
-            )}
+        )}
             
         </div>
         </>
