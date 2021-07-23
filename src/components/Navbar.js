@@ -29,7 +29,7 @@ function Navbar() {
 
     return ( 
         
-            <nav className='navbar'>
+            <nav className='my-navbar'>
                 <ul className='nav-list'>
                     <div className="meal-logo">
                          <Link to='/'>Meal catalogue</Link>
