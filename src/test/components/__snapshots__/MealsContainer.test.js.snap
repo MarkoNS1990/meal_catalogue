@@ -1,0 +1,85 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays correct first child 1`] = `
+<div
+  class="category mt-2"
+>
+  <h3
+    class="category-h"
+  >
+    Select a category: 
+  </h3>
+  <select
+    aria-label=".form-select-sm example"
+    class="form-select form-select-sm"
+    id="category"
+    name="category"
+  >
+    <option
+      value="Seafood"
+    >
+      Seafood
+    </option>
+    <option
+      value="Dessert"
+    >
+      Dessert
+    </option>
+    <option
+      value="Vegan"
+    >
+      Vegan
+    </option>
+    <option
+      value="Breakfast"
+    >
+      Breakfast
+    </option>
+  </select>
+</div>
+`;
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+   
+  <div
+    class="category mt-2"
+  >
+    <h3
+      class="category-h"
+    >
+      Select a category: 
+    </h3>
+    <select
+      aria-label=".form-select-sm example"
+      class="form-select form-select-sm"
+      id="category"
+      name="category"
+    >
+      <option
+        value="Seafood"
+      >
+        Seafood
+      </option>
+      <option
+        value="Dessert"
+      >
+        Dessert
+      </option>
+      <option
+        value="Vegan"
+      >
+        Vegan
+      </option>
+      <option
+        value="Breakfast"
+      >
+        Breakfast
+      </option>
+    </select>
+  </div>
+  <div
+    class="card-list"
+  />
+</DocumentFragment>
+`;

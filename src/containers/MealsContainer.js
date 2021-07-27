@@ -40,7 +40,7 @@ function MealsContainer() {
         <>
             <div className="category mt-2">
                 <h3 className='category-h'>Select a category: </h3>
-                <select class='form-select form-select-sm' aria-label=".form-select-sm example" name="category" id="category" onChange={(e) => setCategory(e.target.value)}>
+                <select className='form-select form-select-sm' aria-label=".form-select-sm example" name="category" id="category" onChange={(e) => setCategory(e.target.value)}>
                     <option value="Seafood">Seafood</option>
                     <option value="Dessert">Dessert</option>
                     <option value="Vegan">Vegan</option>
