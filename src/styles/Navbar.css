@@ -4,19 +4,23 @@
   padding: 20px;
   font-size: 1.3rem;
 }
+
 ul {
   list-style-type: none;
 }
+
 a {
   color: #fff;
   text-decoration: none;
   margin-right: 30px;
   font-family: "Courier New", Courier, monospace;
 }
+
 a:hover {
   color: rgb(46, 43, 43);
   transition: 0.2s ease-in;
 }
+
 .nav-list {
   display: flex;
   justify-content: space-between;
@@ -30,6 +34,12 @@ a:hover {
 .search-item {
   display: flex;
   align-items: center;
+}
+
+.search-icon {
+  background-color: rgb(194, 60, 60);
+  border: none;
+  color: #fff;
 }
 
 .meal-logo {

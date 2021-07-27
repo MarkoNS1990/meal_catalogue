@@ -1,8 +1,8 @@
 import React from 'react';
-import { render, cleanup, screen } from '@testing-library/react';
-import App from '../../App'
-import store from '../../redux/store'
-import {Provider} from 'react-redux'
+import { render, cleanup } from '@testing-library/react';
+import { Provider } from 'react-redux';
+import App from '../../App';
+import store from '../../redux/store';
 import '@testing-library/jest-dom';
 
 afterEach(cleanup);

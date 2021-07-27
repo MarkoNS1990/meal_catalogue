@@ -4,6 +4,7 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+
 body {
   display: flex;
   flex-direction: column;
@@ -11,10 +12,12 @@ body {
 
 .App {
   flex: 1 0 auto;
-  background: linear-gradient(rgba(48, 54, 51, 0.9), rgba(156, 122, 151, 0.9)),
+  background:
+    linear-gradient(rgba(48, 54, 51, 0.9), rgba(156, 122, 151, 0.9)),
     url("../assets/bg.jpg") center center/cover no-repeat;
   min-height: 100vh;
 }
+
 footer {
   flex-shrink: 0;
 }
