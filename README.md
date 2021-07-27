@@ -1,4 +1,4 @@
-# Meal Catalogue App
+# React-Meal Catalogue App
 
 React Meal Catalog App uses themealdb.com API to fetch data for vegetarian meals. User can filter the displayed meals by category or searching by name.
 
