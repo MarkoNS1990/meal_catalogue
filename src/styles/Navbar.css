@@ -1,0 +1,57 @@
+.my-navbar {
+  background-color: rgb(194, 60, 60);
+  color: #fff;
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+a:hover {
+  color: rgb(46, 43, 43);
+  transition: 0.2s ease-in;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.MuiInputBase-input::placeholder {
+  color: #fff !important;
+}
+
+.search-item {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  background-color: rgb(194, 60, 60);
+  border: none;
+  color: #fff;
+}
+
+.meal-logo {
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+  }
+
+  .list-item {
+    margin: 10px 0;
+  }
+}

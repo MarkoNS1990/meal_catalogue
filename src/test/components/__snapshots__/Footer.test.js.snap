@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`displays correct first child 1`] = `
+<footer>
+  <p>
+    Made with ♥ by Marko Zecevic © 2021.
+  </p>
+</footer>
+`;
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+   
+  <footer>
+    <p>
+      Made with ♥ by Marko Zecevic © 2021.
+    </p>
+  </footer>
+</DocumentFragment>
+`;
